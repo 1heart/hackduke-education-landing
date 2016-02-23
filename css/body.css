@@ -10,17 +10,17 @@
   font-weight: normal;
 }
 
-/* @font-face { */
-/*     font-family: 'portermedium'; */
-/*     src: url('../fonts/porter_medium-webfont.eot'); */
-/*     src: url('../fonts/porter_medium-webfont.eot?#iefix') format('embedded-opentype'), */
-/*          url('../fonts/porter_medium-webfont.woff2') format('woff2'), */
-/*          url('../fonts/porter_medium-webfont.woff') format('woff'), */
-/*          url('../fonts/porter_medium-webfont.ttf') format('truetype'), */
-/*          url('../fonts/porter_medium-webfont.svg#portermedium') format('svg'); */
-/*     font-weight: normal; */
-/*     font-style: normal; */
-/* } */
+@font-face {
+    font-family: 'portermedium';
+    src: url('../fonts/porter_medium-webfont.eot');
+    src: url('../fonts/porter_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/porter_medium-webfont.woff2') format('woff2'),
+         url('../fonts/porter_medium-webfont.woff') format('woff'),
+         url('../fonts/porter_medium-webfont.ttf') format('truetype'),
+         url('../fonts/porter_medium-webfont.svg#portermedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 @font-face {
@@ -51,7 +51,7 @@
 }
 
 .speakers-text {
-	/* font-family: 'portermedium'; */
+	font-family: 'portermedium';
 	color: #50E3C2;
 	font-weight: bold;
 	font-size: 45px;
@@ -66,16 +66,16 @@
 	margin-top: -1px;
 	text-align: center;
 	background-color: #204876;
-	height: 780px;
+	padding-bottom: 70px;
 }
 
 .split-speaker {
 	text-align: center;
 	background-color: #103261;
-	height: 780px;
+	padding-bottom: 70px;
 }
 
-#speaker-picture {
+#speaker-picture-solid, #speaker-picture-split {
 	padding-top: 75px;
 	margin-left: 15px;
 	width: 225px;
@@ -123,15 +123,17 @@
 	transform: translateX(15px) !important;
 }
 
-.name {
-	/* font-family: 'portermedium'; */
-	padding-top: 25px;
-	transform: translateX(-13px);
+.name-split, .name-solid {
+	padding-top: 20px;
+	text-align: left;
+	width: 250px;
+	margin: 0 auto;
+	font-family: 'portermedium';
 	color: #50E3C2;
 	font-size: 25px;
 }
 
-.name-title-separator {
+.name-title-separator-solid, .name-title-separator-split {
 	transform: translateX(-75px);
 	width: 100px;
 	border-width: 4px;
@@ -139,14 +141,17 @@
 	margin-bottom: 10px;
 }
 
-.title {
+.title-solid, .title-split {
+	width: 250px;
+	text-align: left;
+	margin: 0 auto;
 	font-family: 'AvenirNext-MediumItalic';
-	transform: translateX(-20px);
+	padding-right: 0px;
 	color: #FFFFFF;
 	font-size: 20px;
 }
 
-.info {
+.info-solid, .info-split {
 	padding-top: 20px;
  	color: #FFFFFF;
  	text-align: left;
@@ -154,17 +159,7 @@
  	margin: 0 auto;
 }
 
-.info a {
-  color: #50E3C2;
-}
-
-@media(min-width: 768px) {
-	.solid-speaker {
-		height: 480px;
-	}
-	.split-speaker {
-		height: 480px;
-	}
+@media(min-width: 1000px) {
 	#content {
 		padding-top: 25px;
 		display: inline-block;
@@ -174,35 +169,75 @@
 		display: inline-block;
 		transform: translateX(-20px) !important;
 	}
-	#speaker-picture {
-		margin-top: -325px;
-		width: 300px;
+	#speaker-picture-solid {
+		margin-top: -425px;
+		width: 415px;
 		display: inline-block;
 		transform: translateX(10px);
 	}
-	.info {
+	#speaker-picture-split {
+		margin-top: -425px;
+		width: 415px;
+		display: inline-block;
+		transform: translateX(10px);
+	}
+	.info-solid {
 		font-size: 15px;
 		width: 400px;
 		transform: translateX(20px);
 	}
-	.title {
-		font-size: 25px;
-		transform: translateX(-30px);
+	.info-split {
+		font-size: 15px;
+		width: 400px;
+		transform: translateX(20px);
+		text-align: right;
 	}
-	.name-title-separator {
+	.title-solid {
+		width: 500px;
+		text-align: left;
+		padding-left: 70px;
+		font-size: 25px;
+		text-align: middle;
+	}
+	.title-split {
+		width: 500px;
+		text-align: right;
+		padding-right: 25px;
+		font-size: 25px;
+		text-align: middle;
+	}
+	.name-title-separator-solid {
 		transform: translateX(-130px);
 	}
-	.name {
+	.name-title-separator-split {
+		transform: translateX(175px);
+	}
+	.name-solid {
+		padding-left: 75px;
 		font-size: 40px;
+		width: 500px;
+		text-align: left;
+		transform: translateX(-5px);
+	}
+	.name-split {
+		padding-right: 15px;
+		font-size: 40px;
+		width: 500px;
+		text-align: right;
 		transform: translateX(-5px);
 	}
 	.twitter-icon, .twitter-icon:hover {
 		padding-left: 20px;
-		transform: translateY(-220px);
-	}
+		transform: translateY(-300px);
 	}
 	.linkedin-icon, .linkedin-icon:hover {
 		padding-left: 20px;
-		transform: translateY(-240px);
+		transform: translateY(-335px);
+	}
+	.shift-up-linkedin {
+		transform: translateY(-360px);
+	}
+	.shift-up-twitter {
+		transform: translateY(-325px);
 	}
 }

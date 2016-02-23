@@ -10,13 +10,17 @@ $(window).bind('scroll', function(e) {
   }
 });
 
-widthChange();
+widthChangeContent();
+widthChangeNavbar();
 $(window).on('resize', function(){
-  widthChange();
+  widthChangeContent();
+  widthChangeNavbar();
 });
 
-function widthChange() {
-  var isDesktop = window.innerWidth >= 768
+function widthChangeContent() {
+  var isDesktop = window.innerWidth >= 1000;
+  navbarPos = isDesktop ? $("#navbar-main").position().top : 0;
+  console.log(isDesktop)
   var mobileElems = document.getElementsByClassName('mobile')
   var desktopElems = document.getElementsByClassName('desktop')
   var inlineDesktopElems = document.getElementsByClassName('inline-desktop')
@@ -28,6 +32,18 @@ function widthChange() {
   }
   for(var i = 0; i < inlineDesktopElems.length; i++) {
     inlineDesktopElems[i].style.display = isDesktop? 'inline-block' : 'none';
+  }
+}
+
+function widthChangeNavbar() {
+  var isDesktop = window.innerWidth >= 768;
+  var mobileElems = document.getElementsByClassName('mobile-navbar');
+  var desktopElems = document.getElementsByClassName('desktop-navbar');
+  for(var i = 0; i < mobileElems.length; i++) {
+    mobileElems[i].style.display = isDesktop ? 'none' : 'block';
+  }
+  for(var i = 0; i < desktopElems.length; i++) {
+    desktopElems[i].style.display = isDesktop? 'block' : 'none';
   }
 }
 
