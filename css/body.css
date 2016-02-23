@@ -10,17 +10,17 @@
   font-weight: normal;
 }
 
-/* @font-face { */
-/*     font-family: 'portermedium'; */
-/*     src: url('../fonts/porter_medium-webfont.eot'); */
-/*     src: url('../fonts/porter_medium-webfont.eot?#iefix') format('embedded-opentype'), */
-/*          url('../fonts/porter_medium-webfont.woff2') format('woff2'), */
-/*          url('../fonts/porter_medium-webfont.woff') format('woff'), */
-/*          url('../fonts/porter_medium-webfont.ttf') format('truetype'), */
-/*          url('../fonts/porter_medium-webfont.svg#portermedium') format('svg'); */
-/*     font-weight: normal; */
-/*     font-style: normal; */
-/* } */
+@font-face {
+    font-family: 'porterlight';
+    src: url('fonts/porter_light-webfont.eot');
+    src: url('fonts/porter_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/porter_light-webfont.woff2') format('woff2'),
+         url('fonts/porter_light-webfont.woff') format('woff'),
+         url('fonts/porter_light-webfont.ttf') format('truetype'),
+         url('fonts/porter_light-webfont.svg#porterlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 @font-face {
@@ -51,10 +51,10 @@
 }
 
 .speakers-text {
-	/* font-family: 'portermedium'; */
+	font-family: 'porterlight';
 	color: #50E3C2;
-	font-weight: bold;
-	font-size: 45px;
+	font-weight: lighter;
+	font-size: 55px;
 }
 
 .trianglebanner {
@@ -124,11 +124,11 @@
 }
 
 .name {
-	/* font-family: 'portermedium'; */
+	font-family: 'porterlight';
 	padding-top: 25px;
 	transform: translateX(-13px);
 	color: #50E3C2;
-	font-size: 25px;
+	font-size: 35px;
 }
 
 .name-title-separator {
@@ -144,6 +144,7 @@
 	transform: translateX(-20px);
 	color: #FFFFFF;
 	font-size: 20px;
+        text-transform: uppercase;
 }
 
 .info {
