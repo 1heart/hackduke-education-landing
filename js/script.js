@@ -20,7 +20,6 @@ $(window).on('resize', function(){
 function widthChangeContent() {
   var isDesktop = window.innerWidth >= 1000;
   navbarPos = isDesktop ? $("#navbar-main").position().top : 0;
-  console.log(isDesktop)
   var mobileElems = document.getElementsByClassName('mobile')
   var desktopElems = document.getElementsByClassName('desktop')
   var inlineDesktopElems = document.getElementsByClassName('inline-desktop')
