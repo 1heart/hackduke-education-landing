@@ -23,8 +23,9 @@
   font-weight: normal;
 }
 
-
-
+#header-section {
+	display: none;
+}
 #title-section {
 	padding: 100px 0px;
 	width: 250px;
@@ -64,13 +65,18 @@
   .title-text {
     font-size: 50pt;
   }
-	#title-section {
-		height: 88vh;
-		padding-top: 25vh;
-		padding-right: 70vw;
+	
+	#header-section {
+		position: relative;
+		display: block;
 	}
-	#header-image {
-		background-image: url("../images/header.png");
-		background-size: 100vw 88vh;
+	.header-section-background {
+		width: 100%;
+	}
+	.header-text {
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		width: 50%;
 	}
 }
