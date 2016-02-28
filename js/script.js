@@ -1,6 +1,31 @@
+var navbarPos = 0;
+var isDesktop = true;
 
-var isDesktop = window.innerWidth >= 768
-var navbarPos = isDesktop ? $("#navbar-main").position().top : 0;
+$(window).ready(function() {
+  updateNavbarPos();
+});
+
+$(window).on('resize', function() {
+  updateNavbarPos();
+});
+
+function updateNavbarPos() {
+  isDesktop = window.innerWidth >= 768;
+  if (isDesktop) {
+    if ($("#navbar-main").hasClass("navbar-fixed-top")) {
+      $("#navbar-main").removeClass("navbar-fixed-top");
+      navbarPos = $("#navbar-main").position().top;
+      $("#navbar-main").addClass("navbar-fixed-top");
+    }
+    else {
+      navbarPos = $("#navbar-main").position().top;
+    }
+  }
+  else {
+    navbarPos = 0;
+  }
+}
+
 $(window).bind('scroll', function(e) {
   if ($(window).scrollTop() > navbarPos) {
     $('#navbar-main').addClass('navbar-fixed-top');
@@ -10,16 +35,18 @@ $(window).bind('scroll', function(e) {
   }
 });
 
-widthChangeContent();
-widthChangeNavbar();
+$(document).ready(function() {
+  widthChangeContent();
+  widthChangeNavbar();
+});
 $(window).on('resize', function(){
   widthChangeContent();
   widthChangeNavbar();
 });
 
 function widthChangeContent() {
-  var isDesktop = window.innerWidth >= 1000;
-  navbarPos = isDesktop ? $("#navbar-main").position().top : 0;
+  // var isDesktop = window.innerWidth >= 1000;
+  // navbarPos = isDesktop ? $("#navbar-main").position().top : 0;
   var mobileElems = document.getElementsByClassName('mobile')
   var desktopElems = document.getElementsByClassName('desktop')
   var inlineDesktopElems = document.getElementsByClassName('inline-desktop')
