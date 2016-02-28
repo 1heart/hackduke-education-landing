@@ -20,13 +20,23 @@
   <body>
 
     <div id="top" class="desktop-navbar"></div>
-    <div id="header-image"> 
-      <div id="title-section" class="desktop-navbar">
-        <div class="presents-text"> hackduke presents: </div>
-        <div class="title-text"> HACKDUKE EDUCATION SERIES </div>
+    <div id="header-section">
+      <img src="images/header.png" class="header-section-background">
+      <div class="container header-text">
+        <div class="row">
+          <div class="col-md-offset-2 col-md-4">
+            <div class="presents-text"> hackduke presents: </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-offset-2 col-md-4">
+            <div class="title-text"> HACKDUKE EDUCATION SERIES </div>
+          </div>
+        </div>
       </div>
     </div>
 
+    <div id="why-anchor" class="anchor"> </div>
     <div id="navbar-container">
       <nav id="navbar-main" class="navbar navbar-default navbar-inverse">
         <div id="top" class="mobile-navbar"></div>
@@ -58,26 +68,33 @@
     </div>
 
     <img src="images/mobile-triangleheader.png" class="mobile-triangleheader">
-    <div id="why-anchor" class="anchor"> </div>
-    <div id="why-education"> 
-      <img src="images/line-teal.svg" class="line-teal">
-      <div class="why-text">
-        HackDuke Education brings <br> <span class="green-color">incredible talent in tech</span> <br>  to Duke to share their experiences, skills, and opportunities.
-        <!-- HackDuke Education is a dream: if we can bring some of our incredible talent in tech back to Duke and share their experiences, <span class="green-color"> everyone </span> in this community will benefit. -->
+    <div class="container why-section">
+      <div class="row">
+        <img src="images/line-teal.svg" class="line-teal">
       </div>
-      <img src="images/line-teal.svg" class="line-teal">
+      <div class="row why-text">
+        HackDuke Education brings <br> <span class="green-color">incredible talent in tech</span> <br>  to Duke to share their experiences, skills, and opportunities.
+      </div>
+      <div class="row">
+        <img src="images/line-teal.svg" class="line-teal">
+      </div>
     </div>
 
     <div id="body-anchor" class="anchor"> </div>
     <img src="images/trianglebanner-top.svg" class="trianglebanner">
     <div id="body">
-      <div class="intro-speakers">
-        <div class="meet-text"> meet our </div>
-        <div class="speakers-text"> SPEAKERS </div>
-        <img src="images/line-teal.svg" class="line-teal">
+      <div class="container intro-speakers">
+        <div class="row">
+          <div class="meet-text"> meet our </div>
+        </div>
+        <div class="row speakers-text">
+          <div class="speakers-text"> SPEAKERS </div>
+          <img src="images/line-teal.svg" class="line-teal">
+        </div>
       </div>
 
       <div class="solid-speaker"> 
+        <div class="filler"></div>
         <img id="speaker-picture-solid" class="mobile" src="images/janvi.jpg"/>
         <div id="icons" class="inline-desktop">
           <a class="linkedin-icon"><i class="fa fa-linkedin fa-3x"></i></a>
@@ -96,7 +113,9 @@
         </div>
       </div>
 
+
       <div class="split-speaker">
+        <div class="filler"></div>
         <img id="speaker-picture-split" class="mobile" src="images/yusuf.png"/> 
         <div id="content-split" style="transform: translateX(-20px)">
           <div class="name-split"> Yusuf Simonson</div>
@@ -117,6 +136,7 @@
       </div>
 
       <div class="solid-speaker"> 
+        <div class="filler"></div>
         <img id="speaker-picture-solid" class="mobile" src="images/melissa_dalis.jpg"/>
         <div id="icons" class="inline-desktop">
           <a class="linkedin-icon"><i class="fa fa-linkedin fa-3x"></i></a>
@@ -141,12 +161,16 @@ Melissa is a data scientist at Square in San Francisco. A 2014 graduate in Compu
     <div id="connect-anchor" class="anchor"> </div> 
     <img src="images/trianglebanner-bottom.svg" class="trianglebanner">
 
-    <div id="why-education"> 
-      <img src="images/line-teal.svg" class="line-teal">
-      <div class="why-text">
-        There are many more speakers to be announced, so stay tuned!
+    <div class="container why-section">
+      <div class="row">
+        <img src="images/line-teal.svg" class="line-teal">
       </div>
-      <img src="images/line-teal.svg" class="line-teal">
+      <div class="row why-text">
+        There are many more speakers to be announced, so <span class="green-color">stay tuned</span>!
+      </div>
+      <div class="row">
+        <img src="images/line-teal.svg" class="line-teal">
+      </div>
     </div>
 
 
@@ -154,19 +178,21 @@ Melissa is a data scientist at Square in San Francisco. A 2014 graduate in Compu
     <div id="connect">
       <div class="connect-big-text"> CONNECT </div>
       <img src="images/line-teal.svg" class="line-teal">
-      <div> <a style="color:#000000; text-decoration: none;" href="https://www.google.com"> 
-          <!-- TODO -->
-          Check out <span class="green-color"> our facebook event > </span> </a> </div>
-      <div> <a style="color:#000000; text-decoration: none; padding-bottom: 75px" href="mailto:hackduke@gmail.com"> 
-          <span class="green-color"> Email us: </span> hackduke@gmail.com</a> </div>
+      <div>
+        Check out on <a href="https://www.facebook.com/hackduke/"><span class="green-color"> facebook </span> </a>
+      </div>
+      <br>
+      <div>
+ Reach out to us through <a href="mailto:hackers@hackduke.org"><span class="green-color" href="mailto:hackers@hackduke.org">email</span> </a>
+      </div>
     </div>
 
     <div id="contact">
       <img src="images/line-footer.svg" class="line-footer">
       <div style="text-align: center; padding-top:20px;">
         <a class="footer-icon" href="mailto:hackduke@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
-        <a class="footer-icon" href="https://www.facebook.com"><i class="fa fa-facebook fa-3x"></i></a>
-        <a class="footer-icon" href="https://www.twitter.com"><i class="fa fa-twitter fa-3x"></i></a>
+        <a class="footer-icon" href="https://www.facebook.com/hackduke/"><i class="fa fa-facebook fa-3x"></i></a>
+        <a class="footer-icon" href="https://twitter.com/hackduke/"><i class="fa fa-twitter fa-3x"></i></a>
       </div>
       <div class="copyright"> 2016 HACKDUKE</div>
     </div>

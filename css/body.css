@@ -36,12 +36,21 @@
   font-weight: normal;
 }
 
+a {
+	color: #50E3C2;
+}
+
+a:hover {
+	color: #50E3C2;
+}
+
 
 .intro-speakers {
 	margin-top: -1px;
 	background-color: #204876;
 	text-align: center;
 	line-height: 40px; 
+	width: 100%;
 }
 
 .meet-text {
@@ -164,6 +173,12 @@
 }
 
 @media(min-width: 1000px) {
+  .filler {
+    height: 150px;
+  }
+  .intro-speakers {
+        margin-bottom: -100px;
+  }
 	#content {
 		padding-top: 25px;
 		display: inline-block;
