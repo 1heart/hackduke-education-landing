@@ -27,6 +27,7 @@ function updateNavbarPos() {
 }
 
 $(window).bind('scroll', function(e) {
+  updateNavbarPos();
   if ($(window).scrollTop() > navbarPos) {
     $('#navbar-main').addClass('navbar-fixed-top');
   }
