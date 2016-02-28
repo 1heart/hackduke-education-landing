@@ -19,17 +19,27 @@
   </head>
   <body>
 
-    <div id="top" class="desktop"></div>
-    <div id="header-image"> 
-      <div id="title-section" class="desktop">
-        <div class="presents-text"> hackduke presents: </div>
-        <div class="title-text"> HACKDUKE EDUCATION SERIES </div>
+    <div id="top" class="desktop-navbar"></div>
+    <div id="header-section">
+      <img src="images/header.png" class="header-section-background">
+      <div class="container header-text">
+        <div class="row">
+          <div class="col-md-offset-2 col-md-4">
+            <div class="presents-text"> hackduke presents: </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-offset-2 col-md-4">
+            <div class="title-text"> HACKDUKE EDUCATION SERIES </div>
+          </div>
+        </div>
       </div>
     </div>
 
+    <div id="why-anchor" class="anchor"> </div>
     <div id="navbar-container">
       <nav id="navbar-main" class="navbar navbar-default navbar-inverse">
-        <div id="top" class="mobile"></div>
+        <div id="top" class="mobile-navbar"></div>
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -52,43 +62,50 @@
       </nav>
     </div>
 
-    <div id="title-section" class="mobile">
+    <div id="title-section" class="mobile-navbar">
       <div class="presents-text"> hackduke presents: </div>
       <div class="title-text"> HACKDUKE EDUCATION SERIES </div>
     </div>
 
     <img src="images/mobile-triangleheader.png" class="mobile-triangleheader">
-    <div id="why-anchor" class="anchor"> </div>
-    <div id="why-education"> 
-      <img src="images/line-teal.svg" class="line-teal">
-      <div class="why-text">
-        HackDuke Education brings <br> <span class="green-color">incredible talent in tech</span> <br>  to Duke to share their experiences, skills, and opportunities.
-        <!-- HackDuke Education is a dream: if we can bring some of our incredible talent in tech back to Duke and share their experiences, <span class="green-color"> everyone </span> in this community will benefit. -->
+    <div class="container why-section">
+      <div class="row">
+        <img src="images/line-teal.svg" class="line-teal">
       </div>
-      <img src="images/line-teal.svg" class="line-teal">
+      <div class="row why-text">
+        HackDuke Education brings <br> <span class="green-color">incredible talent in tech</span> <br>  to Duke to share their experiences, skills, and opportunities.
+      </div>
+      <div class="row">
+        <img src="images/line-teal.svg" class="line-teal">
+      </div>
     </div>
 
     <div id="body-anchor" class="anchor"> </div>
     <img src="images/trianglebanner-top.svg" class="trianglebanner">
     <div id="body">
-      <div class="intro-speakers">
-        <div class="meet-text"> meet our </div>
-        <div class="speakers-text"> SPEAKERS </div>
-        <img src="images/line-teal.svg" class="line-teal">
+      <div class="container intro-speakers">
+        <div class="row">
+          <div class="meet-text"> meet our </div>
+        </div>
+        <div class="row speakers-text">
+          <div class="speakers-text"> SPEAKERS </div>
+          <img src="images/line-teal.svg" class="line-teal">
+        </div>
       </div>
 
       <div class="solid-speaker"> 
-        <img id="speaker-picture" class="mobile" src="images/janvi.jpg"/>
+        <div class="filler"></div>
+        <img id="speaker-picture-solid" class="mobile" src="images/janvi.jpg"/>
         <div id="icons" class="inline-desktop">
           <a class="linkedin-icon"><i class="fa fa-linkedin fa-3x"></i></a>
           <a class="twitter-icon"><i class="fa fa-twitter fa-3x"></i></a>
         </div>
-        <img id="speaker-picture" class="inline-desktop" src="images/janvi.jpg"/>
+        <img id="speaker-picture-solid" class="inline-desktop" src="images/janvi.jpg"/>
         <div id="content">               
-          <div class="name">Janvi Shah</div>
-          <hr class="name-title-separator" style="border-color:#103261;"/>
-          <div class="title">google, apm</div>
-          <div class="info">
+          <div class="name-solid">Janvi Shah</div>
+          <hr class="name-title-separator-solid" style="border-color:#103261;"/>
+          <div class="title-solid">google, apm</div>
+          <div class="info-solid">
             Janvi Shah (’15) is an Associate Product Manager at Google working on Google Search features for media and entertainment. At Duke, she majored in Neuroscience with minors in CS and Finance and founded StartupConnect. She spent her summers at DukeEngage in Nicaragua, Duke in Silicon Valley/Geneva, and held an internship at a digital startup health seed fund called Rock Health. As a product manager, she strives to combine her background in consumer psychology and technology by working with engineers and designers to build products that add value to users’ lives at scale.
             <!-- TODO -->
             Sign up for tickets at <a href="">Eventbrite</a> and RSVP on <a href="">Facebook</a>!
@@ -96,56 +113,64 @@
         </div>
       </div>
 
+
       <div class="split-speaker">
-        <img id="speaker-picture" class="mobile" src="images/yusuf.png"/> 
+        <div class="filler"></div>
+        <img id="speaker-picture-split" class="mobile" src="images/yusuf.png"/> 
         <div id="content-split" style="transform: translateX(-20px)">
-          <div class="name"> Yusuf Simonson</div>
-          <hr class="name-title-separator" style="border-color:#204876;"/>
-          <div class="title"> the muse, cto </div>
-          <div class="info"> Yusuf writes software that keeps themuse.com running smoothly to provide a seamless experience for millennials in search of their dream job and accessible career advice. Previously, Yusuf worked as a developer at companies large and small, including Google, Docker, and Microsoft. A Forbes contributer and member of its Tech Council, Yusuf is a North Carolina State alum and received his masters in Computer Science from UNC at Chapel Hill.
+          <div class="name-split"> Yusuf Simonson</div>
+          <hr class="name-title-separator-split" style="border-color:#204876;"/>
+          <div class="title-split"> the muse, cto </div>
+          <div class="info-split"> Yusuf writes software that keeps themuse.com running smoothly to provide a seamless experience for millennials in search of their dream job and accessible career advice. Previously, Yusuf worked as a developer at companies large and small, including Google, Docker, and Microsoft. A Forbes contributer and member of its Tech Council, Yusuf is a North Carolina State alum and received his masters in Computer Science from UNC at Chapel Hill.
             <!-- TODO -->
 
             Sign up for tickets at <a href="">Eventbrite</a> and RSVP on <a href="">Facebook</a>!
 
           </div>
         </div>
-        <img id="speaker-picture" class="inline-desktop" src="images/yusuf.png"/>
+        <img id="speaker-picture-split" class="inline-desktop" src="images/yusuf.png"/>
         <div id="icons" class="inline-desktop">
-          <a class="linkedin-icon"><i class="fa fa-linkedin fa-3x"></i></a>
-          <a class="twitter-icon"><i class="fa fa-twitter fa-3x"></i></a>
+          <a class="linkedin-icon shift-up-linkedin"><i class="fa fa-linkedin fa-3x"></i></a>
+          <a class="twitter-icon shift-up-twitter"><i class="fa fa-twitter fa-3x"></i></a>
         </div>
       </div>
 
       <div class="solid-speaker"> 
-        <img id="speaker-picture" class="mobile" src="images/melissa_dalis.jpg"/>
+        <div class="filler"></div>
+        <img id="speaker-picture-solid" class="mobile" src="images/melissa_dalis.jpg"/>
         <div id="icons" class="inline-desktop">
           <a class="linkedin-icon"><i class="fa fa-linkedin fa-3x"></i></a>
           <a class="twitter-icon"><i class="fa fa-twitter fa-3x"></i></a>
         </div>
-        <img id="speaker-picture" class="inline-desktop" src="images/melissa_dalis.jpg"/>
+        <img id="speaker-picture-solid" class="inline-desktop" src="images/melissa_dalis.jpg"/>
         <div id="content">               
-          <div class="name">Melissa Dalis</div>
-          <hr class="name-title-separator" style="border-color:#103261;"/>
-          <div class="title">square, data scientist</div>
-          <div class="info"> Melissa is a data scientist at Square in San Francisco. A 2014 graduate in Computer Science and Math, she will be talking about building machine learning systems at scale, fraud detection and data analysis at Square, and her path to data science.
-
+          <div class="name-solid">Melissa Dalis</div>
+          <hr class="name-title-separator-solid" style="border-color:#103261;"/>
+          <div class="title-solid">square, data scientist</div>
+          <div class="info-solid">
+Melissa is a data scientist at Square in San Francisco. A 2014 graduate in Computer Science and Math, she will be talking about building machine learning systems at scale, fraud detection and data analysis at Square, and her path to data science.
             <!-- TODO -->
             Sign up for tickets at <a href="">Eventbrite</a> and RSVP on <a href="">Facebook</a>!
           </div>
         </div>
       </div>
+
 
     </div>
 
     <div id="connect-anchor" class="anchor"> </div> 
     <img src="images/trianglebanner-bottom.svg" class="trianglebanner">
 
-    <div id="why-education"> 
-      <img src="images/line-teal.svg" class="line-teal">
-      <div class="why-text">
-        There are many more speakers to be announced, so stay tuned!
+    <div class="container why-section">
+      <div class="row">
+        <img src="images/line-teal.svg" class="line-teal">
       </div>
-      <img src="images/line-teal.svg" class="line-teal">
+      <div class="row why-text">
+        There are many more speakers to be announced, so <span class="green-color">stay tuned</span>!
+      </div>
+      <div class="row">
+        <img src="images/line-teal.svg" class="line-teal">
+      </div>
     </div>
 
 
@@ -153,19 +178,21 @@
     <div id="connect">
       <div class="connect-big-text"> CONNECT </div>
       <img src="images/line-teal.svg" class="line-teal">
-      <div> <a style="color:#000000; text-decoration: none;" href="https://www.google.com"> 
-          <!-- TODO -->
-          Check out <span class="green-color"> our facebook event > </span> </a> </div>
-      <div> <a style="color:#000000; text-decoration: none; padding-bottom: 75px" href="mailto:hackduke@gmail.com"> 
-          <span class="green-color"> Email us: </span> hackduke@gmail.com</a> </div>
+      <div>
+        Check out on <a href="https://www.facebook.com/hackduke/"><span class="green-color"> facebook </span> </a>
+      </div>
+      <br>
+      <div>
+ Reach out to us through <a href="mailto:hackers@hackduke.org"><span class="green-color" href="mailto:hackers@hackduke.org">email</span> </a>
+      </div>
     </div>
 
     <div id="contact">
       <img src="images/line-footer.svg" class="line-footer">
       <div style="text-align: center; padding-top:20px;">
         <a class="footer-icon" href="mailto:hackduke@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
-        <a class="footer-icon" href="https://www.facebook.com"><i class="fa fa-facebook fa-3x"></i></a>
-        <a class="footer-icon" href="https://www.twitter.com"><i class="fa fa-twitter fa-3x"></i></a>
+        <a class="footer-icon" href="https://www.facebook.com/hackduke/"><i class="fa fa-facebook fa-3x"></i></a>
+        <a class="footer-icon" href="https://twitter.com/hackduke/"><i class="fa fa-twitter fa-3x"></i></a>
       </div>
       <div class="copyright"> 2016 HACKDUKE</div>
     </div>
