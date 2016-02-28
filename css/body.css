@@ -135,6 +135,26 @@ a:hover {
 }
 
 
+.date-solid, .date-split {
+  padding-top: 30px;
+	width: 250px;
+	text-align: left;
+	margin: 0 auto;
+
+  color: #86AAD3;
+  text-transform: uppercase;
+}
+
+.date-solid {
+  margin: 0 auto;
+  text-align: left;
+}
+
+.date-split {
+	padding-top: 20px;
+  margin: 0 auto;
+}
+
 .name-split, .name-solid {
 	padding-top: 20px;
 	text-align: left;
@@ -225,6 +245,22 @@ a:hover {
 		font-size: 25px;
 		text-align: middle;
 	}
+        .date-solid {
+  letter-spacing: 6px;
+  font-size: 18pt;
+		width: 500px;
+		text-align: left;
+		padding-left: 70px;
+        }
+        .date-split {
+  letter-spacing: 6px;
+  font-size: 18pt;
+  text-align: right;
+		width: 500px;
+		text-align: right;
+		padding-right: 25px;
+		text-align: middle;
+        }
 	.name-title-separator-solid {
 		transform: translateX(-130px);
 	}
