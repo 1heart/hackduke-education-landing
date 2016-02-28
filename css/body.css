@@ -39,6 +39,7 @@
 
 .intro-speakers {
 	margin-top: -1px;
+        margin-bottom: -100px;
 	background-color: #204876;
 	text-align: center;
 	line-height: 40px; 
