@@ -165,6 +165,9 @@
 }
 
 @media(min-width: 1000px) {
+  .filler {
+    height: 150px;
+  }
 	#content {
 		padding-top: 25px;
 		display: inline-block;
