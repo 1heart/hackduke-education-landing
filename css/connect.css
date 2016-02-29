@@ -64,15 +64,35 @@
 	padding-bottom: 100px;
 }
 
+.line-teal-connect {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  width:100px;
+}
+
 .connect-big-text {
 	font-family: 'porterlight';
 	color: #50E3C2;
 	padding-top: 50px;
-	font-size: 55px;
+	font-size: 50px;
+}
+
+#connect-text {
+  font-size: 15px;
+  padding-top: 50px;
 }
 
 @media(min-width: 768px) {
+
+  .line-teal-connect{
+    width:150px;
+  }
 	.connect-big-text {
-		padding-top: 25px;
+		padding-top: 5px;
+    font-size: 70px;
 	}
+
+  #connect-text {
+  font-size: 22px;
+}
 }

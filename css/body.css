@@ -56,7 +56,8 @@ a:hover {
 .meet-text {
 	font-family: 'AvenirNext-Medium';
 	color: #FFFFFF;
-	padding-left: 125px;
+	padding-left: 140px;
+	padding-bottom: 10px;
 	font-size: 20px;
 }
 
@@ -64,7 +65,12 @@ a:hover {
 	font-family: 'porterlight';
 	color: #50E3C2;
 	font-weight: lighter;
-	font-size: 55px;
+	font-size: 50px;
+}
+
+.line-teal {
+	padding-top: 40px;
+	width: 100px;
 }
 
 .trianglebanner {
@@ -86,7 +92,7 @@ a:hover {
 	padding-bottom: 70px;
 }
 
-#speaker-picture-solid, #speaker-picture-split {
+#speaker-picture-solid, #speaker-picture-split, #speaker-picture-solid-first {
 	padding-top: 75px;
 	margin-left: 15px;
 	width: 225px;
@@ -99,32 +105,36 @@ a:hover {
 
 .linkedin-icon {
 	transform: translateY(-35px);
-	font-size: 0.7em;
+	font-size: 0.5em;
 	padding-left: 15px;
+	padding-right: 15px;
 	color: #50E3C2;
 	display: block;
 }
 
 .linkedin-icon:hover {
 	transform: translateY(-35px);
-	font-size: 0.7em;
+	font-size: 0.5em;
 	padding-left: 15px;
+	padding-right: 15px;	
 	color: #FFFFFF;
 	display: block;
 }
 
 .twitter-icon {
 	transform: translateY(-25px);
-	font-size: 0.7em;
+	font-size: 0.5em;
 	padding-left: 15px;
+	padding-right: 15px;
 	color: #50E3C2;
 	display: block;
 }
 
 .twitter-icon:hover {
 	transform: translateY(-25px);
-	font-size: 0.7em;
+	font-size: 0.5em;
 	padding-left: 15px;
+	padding-right: 15px;
 	color: #FFFFFF;
 	display: block;
 }
@@ -148,11 +158,13 @@ a:hover {
 .date-solid {
   margin: 0 auto;
   text-align: left;
+  letter-spacing: 3px;
 }
 
 .date-split {
 	padding-top: 20px;
   margin: 0 auto;
+  letter-spacing: 3px;
 }
 
 .name-split, .name-solid {
@@ -192,6 +204,26 @@ a:hover {
  	margin: 0 auto;
 }
 
+.more-speakers {
+	background-color:#204876;
+	height: 200px;
+	text-align: center;
+}
+
+.speaker-text {
+	text-align: center;
+	padding-top: 50px;
+	font-size: 1.4em;
+	color: #FFFFFF;
+}
+
+/*.why-section-bottom {
+	padding-top: 90px;
+	padding-bottom: 90px;
+	text-align: center
+}*/
+
+
 @media(min-width: 1000px) {
   .filler {
     height: 150px;
@@ -200,7 +232,7 @@ a:hover {
         margin-bottom: -100px;
   }
 	#content {
-		padding-top: 25px;
+		padding-top: 0px;
 		display: inline-block;
 	}
 	#content-split {
@@ -208,12 +240,37 @@ a:hover {
 		display: inline-block;
 		transform: translateX(-20px) !important;
 	}
+
+	.line-teal-speaker {
+	padding-top: 40px;
+	width: 130px;
+	padding-bottom: 50px;
+	}
+
+	.meet-text {
+	font-size: 25px;
+	padding-left: 190px;
+	padding-bottom: 20px;
+	}
+
+	.speakers-text {
+	font-size: 70px;
+	}
+
 	#speaker-picture-solid {
 		margin-top: -425px;
 		width: 415px;
 		display: inline-block;
 		transform: translateX(10px);
 	}
+
+	#speaker-picture-solid-first {
+		margin-top: -500px;
+		width: 415px;
+		display: inline-block;
+		transform: translateX(10px);
+	}
+
 	#speaker-picture-split {
 		margin-top: -425px;
 		width: 415px;
@@ -235,7 +292,8 @@ a:hover {
 		width: 500px;
 		text-align: left;
 		padding-left: 70px;
-		font-size: 25px;
+		font-size: 22px;
+		letter-spacing:1px;
 		text-align: middle;
 	}
 	.title-split {
@@ -246,16 +304,16 @@ a:hover {
 		text-align: middle;
 	}
         .date-solid {
-  letter-spacing: 6px;
-  font-size: 18pt;
+  		letter-spacing: 6px;
+  		font-size: 10pt;
 		width: 500px;
 		text-align: left;
 		padding-left: 70px;
         }
         .date-split {
-  letter-spacing: 6px;
-  font-size: 18pt;
-  text-align: right;
+  		letter-spacing: 6px;
+  		font-size: 10pt;
+  		text-align: right;
 		width: 500px;
 		text-align: right;
 		padding-right: 25px;
@@ -263,9 +321,13 @@ a:hover {
         }
 	.name-title-separator-solid {
 		transform: translateX(-130px);
+		border-width: 5px;
+		padding-bottom:7px;
 	}
 	.name-title-separator-split {
 		transform: translateX(175px);
+		border-width: 5px;
+		padding-bottom: 7px;
 	}
 	.name-solid {
 		padding-left: 75px;
@@ -282,11 +344,11 @@ a:hover {
 		transform: translateX(-5px);
 	}
 	.twitter-icon, .twitter-icon:hover {
-		padding-left: 20px;
+		padding-left: 40px;
 		transform: translateY(-300px);
 	}
 	.linkedin-icon, .linkedin-icon:hover {
-		padding-left: 20px;
+		padding-left: 40px;
 		transform: translateY(-335px);
 	}
 	.shift-up-linkedin {
@@ -295,4 +357,35 @@ a:hover {
 	.shift-up-twitter {
 		transform: translateY(-325px);
 	}
+
+	.solid-speaker, .split-speaker {
+		padding-bottom: 110px;
+	}
+
+	.line-teal-morespeakers {
+		padding-top: 40px;
+		width: 100px;
+		padding-bottom:0px;
+	}
+	
+	.more-speakers {
+	background-color:#204876;
+	width: 100%;	
+	height:200px;
+	text-align: center;
+	display:inline-block;
+	}
+
+	.speaker-text {
+	font-size: 1.5em;
+	color: #FFFFFF;
+	
+	}
+
+	#icons {
+		margin-top: -300px;
+	}
+
+
+
 }

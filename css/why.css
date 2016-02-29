@@ -1,15 +1,28 @@
 .why-section {
 	text-align: center
 }
+
 .why-text {
-	width: 40%;
+	width: 60%;
 	margin: 0 auto;
-	font-size: 1.5em;
+	font-size: 1.2em;
+}
+
+.line-teal-top {
+	padding-top: 200px;
+	padding-bottom: 40px;
+	width: 150px;
+}
+
+.line-teal-bottom {
+	padding-top: 40px;
+	padding-bottom: 140px;
+	width: 150px;
 }
 
 .line-teal {
-	padding: 20px;
-	width: 150px;
+	padding:90px;
+	width:150px;
 }
 
 .green-color {
@@ -19,5 +32,10 @@
 @media(min-width: 768px) {
 	#why-education {
 		padding-top: 100px;
+	}
+
+	.why-text {
+		width: 40%;
+		font-size:1.5em;
 	}
 }
