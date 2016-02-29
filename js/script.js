@@ -1,10 +1,3 @@
-// Add trailing slash
-var url = window.location.href;
-if (url.substr(-1) != '/') {
-  url += '/';
-  window.location.replace(url);
-}
-
 var navbarPos = 0;
 var isDesktop = true;
 
