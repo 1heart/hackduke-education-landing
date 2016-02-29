@@ -10,7 +10,7 @@ $(window).on('resize', function() {
 });
 
 function updateNavbarPos() {
-  isDesktop = window.innerWidth >= 768;
+  isDesktop = window.innerWidth > 1000;
   if (isDesktop) {
     if ($("#navbar-main").hasClass("navbar-fixed-top")) {
       $("#navbar-main").removeClass("navbar-fixed-top");
