@@ -10,7 +10,8 @@
   font-weight: normal;
 }
 
-body {
+html, body {
+  overflow-x: hidden; 
   background-color: #FFFFFF;
   font-family: 'AvenirNext-Regular', sans-serif;
 }
