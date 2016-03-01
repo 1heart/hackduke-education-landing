@@ -3,7 +3,11 @@
   <head>
   <script>
       // Add trailing slash
- 
+      var url = window.location.href;
+      if (url.substr(-1) != '/') {
+        url += '/';
+        window.location.replace(url);
+      }
   </script>
 
     <meta charset="utf-8">
