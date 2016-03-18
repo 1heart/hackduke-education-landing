@@ -105,7 +105,7 @@ a:hover {
 	display: inline-block;
 }
 
-.linkedin-icon {
+.linkedin-icon, .linkedin-icon:visited {
 	transform: translateY(-35px);
 	font-size: 0.5em;
 	padding-left: 15px;
@@ -123,7 +123,7 @@ a:hover {
 	display: block;
 }
 
-.twitter-icon, .twitter-icon:active {
+.twitter-icon, .twitter-icon:visited {
 	transform: translateY(-25px);
 	font-size: 0.5em;
 	padding-left: 15px;
@@ -345,11 +345,11 @@ a:hover {
 		text-align: right;
 		transform: translateX(-5px);
 	}
-	.twitter-icon, .twitter-icon:hover, .twitter-icon:active {
+	.twitter-icon, .twitter-icon:hover {
 		padding-left: 40px;
 		transform: translateY(-300px);
 	}
-	.linkedin-icon, .linkedin-icon:hover, .linkedin-icon:active {
+	.linkedin-icon, .linkedin-icon:hover {
 		padding-left: 40px;
 		transform: translateY(-335px);
 	}
