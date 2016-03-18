@@ -95,9 +95,11 @@ a:hover {
 #speaker-picture-solid, #speaker-picture-split, #speaker-picture-solid-first {
 	padding-top: 75px;
 	margin-left: 15px;
-	width: 225px;
+	width: auto;
+	height: 400px;
 	margin: auto;
 }
+
 
 #icons {
 	display: inline-block;
@@ -121,7 +123,7 @@ a:hover {
 	display: block;
 }
 
-.twitter-icon {
+.twitter-icon, .twitter-icon:active {
 	transform: translateY(-25px);
 	font-size: 0.5em;
 	padding-left: 15px;
@@ -259,21 +261,21 @@ a:hover {
 
 	#speaker-picture-solid {
 		margin-top: -425px;
-		width: 415px;
+		height: 500px;
 		display: inline-block;
 		transform: translateX(10px);
 	}
 
 	#speaker-picture-solid-first {
 		margin-top: -500px;
-		width: 415px;
+		height: 500px;
 		display: inline-block;
 		transform: translateX(10px);
 	}
 
 	#speaker-picture-split {
 		margin-top: -425px;
-		width: 415px;
+		height: 500px;
 		display: inline-block;
 		transform: translateX(10px);
 	}
@@ -343,11 +345,11 @@ a:hover {
 		text-align: right;
 		transform: translateX(-5px);
 	}
-	.twitter-icon, .twitter-icon:hover {
+	.twitter-icon, .twitter-icon:hover, .twitter-icon:active {
 		padding-left: 40px;
 		transform: translateY(-300px);
 	}
-	.linkedin-icon, .linkedin-icon:hover {
+	.linkedin-icon, .linkedin-icon:hover, .linkedin-icon:active {
 		padding-left: 40px;
 		transform: translateY(-335px);
 	}
@@ -385,7 +387,4 @@ a:hover {
 	#icons {
 		margin-top: -300px;
 	}
-
-
-
 }
