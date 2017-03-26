@@ -51,6 +51,7 @@ a:hover {
 	text-align: center;
 	line-height: 40px; 
 	width: 100%;
+	padding-bottom: 100px;
 }
 
 .meet-text {
@@ -79,17 +80,19 @@ a:hover {
 }
 
 .solid-speaker {
-	margin-top: -1px;
+	position: relative;
 	text-align: center;
 	background-color: #204876;
 	padding-bottom: 70px;
-        /* height: 780px; */
+    height: 800px; 
 }
 
 .split-speaker {
+	position: relative;
 	text-align: center;
 	background-color: #103261;
 	padding-bottom: 70px;
+	height: 800px;
 }
 
 #speaker-picture-solid, #speaker-picture-split, #speaker-picture-solid-first {
